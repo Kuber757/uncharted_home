@@ -301,6 +301,10 @@
     src: url(../css/fonts/LarkenRegular.ttf);
 }
 @font-face {
+  font-family: "laren-light";
+  src: url(../css/fonts/Larken\Light.ttf);
+}
+@font-face {
   font-family: "laren-italic";
   src: url(../css/fonts/LarkenLightItalic.ttf);
 }
@@ -593,8 +597,8 @@ a:-webkit-any-link {
   font-size: 45px;
 }
 
-.never-about-us{
-  background: #f3f3ec;
+.never-about-us {
+  background: #f3f3eb;
 }
 /* .about-brown-bg {
     width: 375px;
@@ -987,8 +991,9 @@ ul.nav li{
   left: 0;
   right: auto;
   text-align: center;
-  font-family: laren;
+  font-family: laren-light;
 }
+
 .about-1 h2 {
   font-size: 7.0vw;
   color: #9a765c;
@@ -1069,14 +1074,81 @@ ul.nav li{
 }
 .about-1 p {
   /* margin-bottom: 120px; */
-  font-size: 1.1vw;
+  font-size: 14px;
   color: #8b5e3c;
   max-width: 34vw!important;
   font-weight: 100;
   letter-spacing: 1px;
   text-align: justify;
 }
+.bg-color-material{
+  background-color: #95705a;
+}
 
+.mob-material-list .accordion .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #9a755d;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: unset;
+}
+.mob-material-list h2.heading{font-size: 50px;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 1.2;}
+
+  .mob-material-list .btn-link {
+    font-weight: 400;
+    color: #fff;
+    font-size: 23px;
+    outline: none;
+    text-decoration: none;
+    box-shadow: unset;
+    letter-spacing: 1px;
+}
+
+.mob-material-list .card-body img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mob-material-list .material-btn {
+  color: #99755d;
+  border: 1px solid #fff;
+  padding: 0px 12px;
+  margin: 12px auto;
+  display: block;
+  background: #fff;
+  font-family: laren-light;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.img-material-gif img{
+  height: 100%;
+  width: 100%;
+}
+.img-material-gif{
+  height: 100%;
+  width: 100%;
+}
 .about-1 .heading-container{
   width: 100%;
   height: 125px;
@@ -1534,7 +1606,7 @@ ul.nav li{
     border-bottom: 3px solid #f9f5ec;
 }
 .contact-page {
-  background: #9b745c;
+  background: #9a765c;
 }
 .login-bg {
   background-image: url(../images/login.jpg);

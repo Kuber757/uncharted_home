@@ -47,3 +47,37 @@
     z-index: 9999;
     height: 100vh;
   }
+  .mob-loader{
+    display: none;
+  }
+
+  @media screen and (max-width:720px){
+    .mob-loader{
+      display: block;
+      position: absolute;
+      bottom: 0;
+    }
+    .gif-wrapper {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 300px;
+      transform: translate(-50%, -50%);
+      z-index: 99999;
+    }
+    #loader:after {
+      content: "";
+      background: url(../images/preloading.gif);
+      height: 904px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: repeat-x;
+      background-position: right;
+      background-attachment: fixed;
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      /* animation: message_move_r 4s linear; */
+    }
+  }

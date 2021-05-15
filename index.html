@@ -26,13 +26,14 @@
         <div class="gif-wrapper">
             <img src="images/homepage-loader.gif">
         </div>
+        <img src="images/mobile-gif/preloading.gif" class="w-100 mob-loader">
     </section>
     <div id="luxy">
         <section class="nav-bg">
             <div class="container-fluid px-0 px-lg-3 px-md-3">
                 <div class="page-wrapper">
                     <div class="nav-wrapper">
-                        <nav class="navbar px-0">
+                        <nav class="navbar">
                             <a href="index.html">
                                 <div class="logo">
                                     <img src="images/logo_icon.svg" class="logoicon" alt="logo">
@@ -57,8 +58,11 @@
         </section>
         <section class="video-section">
             <div class="homewrapper_video">
-                <video id="homepage-video" muted autoplay style="width: 100%; height: 100%;">
+                <video id="homepage-video" class="d-lg-block d-md-block d-none" muted autoplay style="width: 100%; height: 100%;">
                     <source src="homevideo.mp4" type="video/mp4">
+                </video>
+                <video id="homepage-video" class="d-block d-lg-none d-md-none" muted autoplay style="width: 100%; height: 100%;">
+                    <source src="mobile_vid.mp4" type="video/mp4">
                 </video>
             </div>
             <button onclick="enableMute()" class="mute-btn" type="button"><i class="fas fa-volume-mute"></i></button>
@@ -87,7 +91,7 @@
                                 </p>
                             </div>
                             <a href="about_us.html">
-                                <button type="submit" class="web-btn outline-button mb-5 mb-lg-0 mb-md-0">
+                                <button type="submit" class="web-btn d-lg-block d-md-block d-none outline-button mb-5 mb-lg-0 mb-md-0">
 
                                     Discover More
 
@@ -95,14 +99,28 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-12 order-lg-0 order-11 mt-3 d-lg-none d-md-none d-block mx-auto">
+                        <a href="about_us.html">
+                            <button type="submit" class="web-btn outline-button mb-5 mb-lg-0 mb-md-0">
+
+                                Discover More
+
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="mob-img-wrapper d-lg-none d-md-none d-block my-3">
+            <img src="images/mobile-gif/v1.gif" class="w-100">
+        </section>
+        <section class="mid-gif d-lg-none d-md-none d-block">
         </section>
         <section class="material-section">
             <div class="material-heading">
                 <h2 class="transformable-text">Materials</h2>
             </div>
-            <section class="material-slider transform-container py-5">
+            <section class="material-slider transform-container py-lg-5 py-4">
                 <div class="container">
                     <div class="slider">
                         <div class="homepage-slides">
@@ -121,6 +139,11 @@
                                     <img class="transform-target" src="images/straw.jpg">
                                 </div>
                             </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/eggshell.jpg">
+                                </div>
+                            </div>
                         </div>
                         <div class="controls">
                             <div class="homepage-captions">
@@ -133,6 +156,9 @@
                                 <div class="caption">
                                     <h3 class="transformable-text">STRAW MARQUETRY</h3>
                                 </div>
+                                <div class="caption">
+                                    <h3 class="transformable-text">EGG SHELL</h3>
+                                </div>
                             </div>
                             <div class="pagination"></div>
                         </div>
@@ -140,8 +166,11 @@
                 </div>
             </section>
             <section class="antique-section">
-                <a href="materials.html"><button class="outline-button mx-auto d-block mb-5 transformable-text">Explore
+                <a href="materials.html"><button class="outline-button mx-auto d-block mb-lg-5 transformable-text">Explore
                         More</button></a>
+                <section class="mob-img-wrapper d-lg-none d-md-none d-block">
+                    <img src="images/mobile-gif/v2.gif" class="w-100">
+                </section>
                 <div class="container future-antiques">
                     <div class="heading-container">
                         <h2 class="transformable-text">Antiques of the future</h2>
@@ -234,11 +263,14 @@
                         </div>
                     </div>
                     <a href="work.html">
-                        <button class="web-btn outline-button mt-5 d-block mx-auto transformable-text">
+                        <button class="web-btn outline-button mt-lg-5 mt-3 d-block mx-auto transformable-text">
                             Discover More
                         </button>
                     </a>
                 </div>
+            </section>
+            <section class="mob-img-wrapper d-lg-none d-md-none d-block">
+                <img src="images/mobile-gif/v2.gif" class="w-100">
             </section>
             <section class="contact-section">
                 <h2 data-emergence="visible">
@@ -251,6 +283,9 @@
                                 IN TOUCH</a></div>
                     </div>
                 </div>
+            </section>
+            <section class="mob-img-wrapper d-lg-none d-md-none d-block">
+                <img src="images/mobile-gif/v3.gif" class="w-100">
             </section>
             <section class="footer">
                 <div class="footer-top">
@@ -297,7 +332,7 @@
         <div class="modal-body p-0">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-12 d-lg-block d-md-block d-none newsletter-img px-0">
+                    <div class="col-lg-6 col-12 d-lg-block d-md-block d-block newsletter-img px-0">
                         <div class="news-img-wrapper">
                             <img src="images/newsletter.jpeg">
                         </div>
@@ -353,16 +388,7 @@
 <script src="js/fontawesome.js"></script>
 <script src="js/main.js"></script>
 
-<script>
-// function vis() {
-//     document.getElementById('float').style.opacity = "1";
-// }
-
-// function hid() {
-//     document.getElementById('float').style.opacity = "0";
-// }
-
-    
+<script>    
 $(function(){
     $(".newsletterForm").submit(function(e){
         let category= $('#addAddressModal').find("input[name=category]:checked").val();
@@ -604,9 +630,9 @@ $(function(){
     })
 
     var project = $(".slider-project").slick({
-        asNavFor: '.captions',
+        asNavFor: '.project-caption',
         infinite: true,
-        speed: 1800,
+        speed: 1500,
         autoplay: true,
         arrows: false,
 
@@ -620,16 +646,8 @@ $(function(){
         dots: false,
         autoplay: true,
         arrows: false,
-        responsive: [
-
-            {
-                breakpoint: 480,
-                settings: {
-                    dots: true,
-                }
-            }
-        ]
     })
+
 
 
 </script>

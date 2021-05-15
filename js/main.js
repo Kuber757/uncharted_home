@@ -4,7 +4,9 @@ $("#search-icon").click(function () {
 	$(".search-input").toggleClass("search-active");
 });
 
+
 $('.menu-toggle').click(function () {
+	console.log('btn clicked');
 	$(".nav").toggleClass("mobile-nav");
 	$(this).toggleClass("is-active");
 });

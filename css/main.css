@@ -42,7 +42,10 @@
     align-items: center;
     padding: 4px 9px;
   }
-  #newsletterModal input {
+  .newsletterForm p{
+    color: #fff;
+  }
+  .popups input,textarea {
     background: #fff;
     border-left: 1px solid #ccc;
     border-radius: 0;
@@ -54,6 +57,20 @@
     font-size: 14px;
     border-color: transparent;
     box-shadow: unset;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.popups .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(121 85 72 / 54%);
+}
+.popups textarea{
+  margin: 0!important;
 }
 .subscribe-text {
   color: #fff;
@@ -70,7 +87,7 @@
   text-align: center;
   display: block;
 }
-#newsletterModal .modal-content {
+.popups .modal-content {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -84,10 +101,10 @@
   border-radius: 13px;
   outline: 0;
 }
-  #newsletterModal .modal-body{
+  .popups .modal-body{
     background-color: #98765c;
   }
-  #newsletterModal button.close {
+  .popups button.close {
     padding: 0;
     border: 0;
     position: absolute;
@@ -102,7 +119,7 @@
     line-height: 25px;
     cursor: none;
 }
-#newsletterModal .form-bg{
+.popups .form-bg{
   background-color: #98765c;
 }
   .news-img-wrapper{
@@ -324,8 +341,8 @@
   top: 50%;
   position: absolute;
   right: 0;
-  border: 5px solid #fff;
-  border-color: transparent #fff transparent #fff;
+  border: 5px solid #98765c;
+  border-color: transparent #98765c transparent #98765c;
   border-width: 0 0 8px 8px;
   -webkit-transform: rotate(
 -45deg
@@ -345,19 +362,16 @@
 .back-btn:after {
   width: 70px;
   height: 1px;
-  background: #fff;
+  background: #98765c;
   content: '';
   display: block;
   position: absolute;
   right: -62px;
   top: 50%;
 }
-.swiper-slider h6{
-  color: #fff;
-  font-size: 22px;
-  margin-bottom: 0;
-  letter-spacing: 1px;
-}
+
+
+
 .back-btn {
   position: absolute;
   top: 2px;
@@ -521,6 +535,7 @@ a:-webkit-any-link {
   font-weight: 400;
   font-size: 100px;
   line-height: 100px;
+  letter-spacing: 2px;
   color: #896249;
   padding-bottom: 20px;
   /* border-bottom: 2px solid #9a673d; */
@@ -597,9 +612,21 @@ a:-webkit-any-link {
   font-size: 45px;
 }
 
+._2KScOi {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  fill: currentColor;
+  height: 1em;
+  width: auto;
+  max-width: 0.6em;
+  pointer-events: none;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
 .never-about-us {
   background: #f3f3eb;
-}
+  overflow: hidden;
+  }
 /* .about-brown-bg {
     width: 375px;
     height: 500px;
@@ -1008,7 +1035,7 @@ ul.nav li{
   background-size: cover;
   background-position: center;
   position: relative;
-  background-image: url(../images/about2.jpeg);
+  background-image: url(../images/about2.png);
 }
 .metlist {
   display: flex;
@@ -1753,6 +1780,23 @@ ul.nav li{
   font-weight: 400;
   color: #f7f6ef;
 }
+.dropdown-menu .inner.show{
+  padding-top: 40px!important;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #97765c;
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  overflow: hidden;
+  color: #97765c;
+  outline: none;
+  font-size: 14px;
+}
+.bootstrap-select>.dropdown-toggle{
+  border-radius: 12px;
+}
 .white-btn {
   background: #f7f6ef!important;
   border: 1px solid #f7f6ef!important;
@@ -1984,16 +2028,28 @@ ul.nav li{
   color: #fff;  
 }
 
-#newsletterModal input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.popups input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #98765c;
 }
-#newsletterModal input::-moz-placeholder { /* Firefox 19+ */
+.popups input::-moz-placeholder { /* Firefox 19+ */
   color: #98765c;
 }
-#newsletterModal input:-ms-input-placeholder { /* IE 10+ */
+.popups input:-ms-input-placeholder { /* IE 10+ */
   color: #98765c;
 }
-#newsletterModal input:-moz-placeholder { /* Firefox 18- */
+.popups input:-moz-placeholder { /* Firefox 18- */
+  color: #98765c;
+}
+.popups textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #98765c;
+}
+.popups textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #98765c;
+}
+.popups textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #98765c;
+}
+.popups textarea:-moz-placeholder { /* Firefox 18- */
   color: #98765c;
 }
 

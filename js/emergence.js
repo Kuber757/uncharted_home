@@ -209,7 +209,7 @@
     else if ((isHandheld() && handheld) || !isHandheld()) {
 
       // Add '.emergence' class to document for conditional CSS
-      document.documentElement.className += ' emergence';
+      //document.documentElement.className += ' emergence';
 
       // If browser supports addEventListener
       // Else use attachEvent

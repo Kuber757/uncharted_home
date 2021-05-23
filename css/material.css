@@ -2,7 +2,13 @@ body{
     background-color: #9a765d;
 }
 body, ::-webkit-scrollbar, .imgrev::before {
-    background: #98765c!important;
+    background: #f3f3eb!important;
+}
+.swiper-slider h6 {
+    color: #98765c;
+    font-size: 22px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
 }
 .material-img-wrap img {
     width: 100%;
@@ -76,7 +82,47 @@ body, ::-webkit-scrollbar, .imgrev::before {
     left: 0;
 }
 
-.swiper-button-prev:before {
+.swiper-slider{
+    background-color: #f3f3eb;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    color: #98765c;
+  }
+  .swiper-button-next:before {
+    width: 0;
+    height: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border: 5px solid #98765c;
+    border-color: #98765c transparent #98765c transparent;
+    border-width: 0 0 8px 8px;
+    -webkit-transform: rotate(
+  -45deg
+  );
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(
+  -45deg
+  );
+    margin: -3px 0 0;
+  }
+  .swiper-button-next:after {
+    width: 90px;
+    height: 1px;
+    background: #98755c;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  .swiper-button-prev:before {
     width: 0;
     height: 0;
     content: '';
@@ -84,26 +130,30 @@ body, ::-webkit-scrollbar, .imgrev::before {
     top: 50%;
     position: absolute;
     right: 0;
-    border: 5px solid #fff;
-    border-color: transparent #fff transparent #fff;
+    border: 5px solid #9a745c;
+    border-color: transparent #98755c transparent #98755c;
     border-width: 0 0 8px 8px;
-    -webkit-transform: rotate(-45deg);
+    -webkit-transform: rotate(
+  -45deg
+  );
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: rotate(
+  -45deg
+  );
     margin: -3px 0 0;
-}
-
-.swiper-button-prev:after {
+  }
+  .swiper-button-prev:after {
     width: 90px;
     height: 1px;
-    background: #fff;
+    background: #9a745c;
     content: '';
     display: block;
     position: absolute;
     right: -62px;
     top: 50%;
-}
+  }
+
 
 .swiper-button-prev {
     left: 400px;
@@ -115,16 +165,7 @@ body, ::-webkit-scrollbar, .imgrev::before {
     outline: none;
 }
 
-.swiper-button-next:after {
-    width: 90px;
-    height: 1px;
-    background: #fff;
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
+
 
 .swiper-button-next {
     position: absolute;
@@ -141,23 +182,7 @@ body, ::-webkit-scrollbar, .imgrev::before {
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
-.swiper-button-next:before {
-    width: 0;
-    height: 0;
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    border: 5px solid #fff;
-    border-color: #fff transparent #fff transparent;
-    border-width: 0 0 8px 8px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    margin: -3px 0 0;
-}
+
 
 .swiper-container{
     height: 92vh;

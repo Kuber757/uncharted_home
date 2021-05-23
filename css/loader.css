@@ -1,7 +1,7 @@
 #loader:after {
     content: "";
-    background: url(../images/preloading.gif);
-    height: 904px;
+    /* background: url(../images/preloading.gif);
+    height: 904px; */
     width: 100%;
     background-size: cover;
     background-repeat: repeat-x;
@@ -40,7 +40,7 @@
  
 
   #loader{
-    background: url(../images/preloading.gif);
+    /* background: url(../images/preloading.gif); */
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -67,8 +67,8 @@
     }
     #loader:after {
       content: "";
-      background: url(../images/preloading.gif);
-      height: 904px;
+      /* background: url(../images/preloading.gif); */
+      /* height: 904px; */
       width: 100%;
       background-size: cover;
       background-repeat: repeat-x;

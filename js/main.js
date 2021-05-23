@@ -47,7 +47,6 @@ $(".never-about-us-slider").slick({
     autoplaySpeed: 6000,
 	infinite: true,
 	arrows: false,
-	autoplay: true,
 	slidesToShow: 2,
 	responsive: [
 		{

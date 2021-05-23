@@ -212,9 +212,11 @@
         margin-right: 20px;
     }
     .aboutus-section {
-        padding: 75px 0;
+        padding: 0;
         background: #f3f3ec!important;
+        height: auto;
     }
+
     .footer-logo {
         margin: auto auto 50px auto;
     }
@@ -244,11 +246,11 @@
     }
     .about-2 {
         width: 100vw;
-        height: 40vh;
+        height: auto;
         background-size: cover;
         background-position: center;
         position: relative;
-        background-image: url(../images/about2.jpeg);
+        background-image: url(../images/mob-about2.png);
     }
     .about-1 h2 {
         font-size: 7.5vw;
@@ -352,6 +354,7 @@
 }
 
 @media  screen and (max-width:720px) {
+    
     .never-about-us-mob  .slick-next {
         font-size: 0;
         line-height: 0;

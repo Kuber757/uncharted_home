@@ -256,9 +256,10 @@ body{
   transition: transform .7s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-delay: .3s;
 } 
-.swiper-slider h3,p{
+.swiper-slider h3, p {
   transition: transform .7s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-delay: .3s;
+  color: #98765c;
 }
 
  .imgrev::before{

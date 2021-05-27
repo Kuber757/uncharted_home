@@ -51,7 +51,7 @@
                                 <li class="nav-item"><a href="about_us.html">Home</a></li>
                                 <li class="nav-item"><a href="index.html">Our Story</a></li>
                                 <li class="nav-item"><a href="materials.html">Materials</a></li>
-                                <li class="nav-item"><a href="work.html">Work</a></li>
+                                <li class="nav-item"><a href="work_preview.html">Work</a></li>
                                 <li class="nav-item"><a href="contact_us.html">Contact</a></li>
                             </ul>
                         </nav>
@@ -75,7 +75,7 @@
         <section class="aboutus-section">
             <div class="container-fluid">
                 <div class="row align-items-top">
-                    <div class="col-lg-6 col-12 order-lg-0 order-11 about-us-container">
+                    <div class="col-lg-6 col-12 about-us-container order-lg-0 order-11">
                         <div class="fix-height">
                             <div class="about-brown-bg w-img w-never imgrev text-left" data-emergence="visible"><img src="images/test-img.png" alt=""></div>
                         </div>
@@ -193,7 +193,7 @@
                         <div class="controls">
                             <div class="captions">
                                 <div class="caption transformable-text">
-                                    <h3>Hospitability<br>Marine<br>Residential</h3>
+                                    <h3>Hospitability <br class="d-lg-block d-none">Marine <br class="d-lg-block d-none">Residential</h3>
                                 </div>
                             </div>
                             <div class="pagination"></div>
@@ -248,8 +248,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="work.html">
-                        <button class="web-btn outline-button mt-lg-5 mt-3 d-block mx-auto transformable-text">
+                    <a href="work_preview.html">
+                        <button class="web-btn outline-button mt-lg-5 mt-3 d-block mx-auto transformable-text" data-toggle="modal" data-target="#exploreMaterialModal">
                             Discover More
                         </button>
                     </a>
@@ -290,7 +290,7 @@
                                         <li><a href="about_us.html">Home</a></li>
                                         <li><a href="index.html">Our Story</a></li>
                                         <li><a href="materials.html">Materials</a></li>
-                                        <li><a href="work.html">Work</a></li>
+                                        <li><a href="work_preview.html">Work</a></li>
                                         <li><a href="contact_us.html">Contact</a></li>
                                     </ul>
                                 </div>
@@ -381,23 +381,22 @@
                             <div class="newsletter-form">
                                 <div class="row">
                                     <h1 class="text-center mb-0 col-12">ENQUIRY</h1>
-                                    <p class="my-2" style="font-family:'laren';">Get the latest updates, discover exclusive designs and offers straight in your inbox.</p>
-                                    <div class="col-6">
+                                    <div class="col-6 mb-lg-1">
                                         <input type="text" name="first_name" class="form-control" placeholder="Enter your First Name">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 mb-lg-1">
                                         <input type="text" name="last_name" class="form-control" placeholder="Enter your Last Name">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 mb-lg-1">
                                     <input type="text" name="company_name" class="form-control" placeholder="Enter your Company Name">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 mb-lg-1">
                                     <input type="url" name="website" class="form-control" placeholder="Enter your Website Name">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 mb-lg-1">
                                     <input type="text" name="email" class="form-control" placeholder="Enter your mail address">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 mb-lg-1">
                                     <input type="tel" maxlength="10" name="number" class="form-control" placeholder="Enter your Phone Number">
                                     </div>
                                     <div class="col-12">
@@ -418,7 +417,7 @@
                                     <div class="col-12">
                                         <Textarea placeholder="Project Details" name="message"></Textarea>
                                     </div>
-                                    <button type="submit" class="subscribe-text">SUBSCRIBE TO UNCHARTED NEWSLETTER</button>
+                                    <button type="submit" class="subscribe-text">SEND</button>
                                 </div>
                             </div>
                         </form>
@@ -652,11 +651,11 @@ $(function(){
                     $('.transformable-text').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
                     $('.antique-left p').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
                     setTimeout(function () {
-                        $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
+                        $('.antique-line').css('transition', 'all 0.1s linear').css('width', '100%');
                     }, 500)
 
                 } else {
-                    $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(140%)');
+                    $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
                     $('.antique-line').css('transition', 'all 0s linear').css('width', '0%');
                 }
 
@@ -727,7 +726,7 @@ $(function(){
                 $('.antique-right .antique-cover').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
                 $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
                 $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
-                $('.antique-image-container img').css('transition', 'transform 0.5s linear').css('transform', 'translateY(0%)');
+                // $('.antique-image-container img').css('transition', 'transform 0.5s linear').css('transform', 'translateY(0%)');
                 $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
                 $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
                 emergence.engage();
@@ -744,7 +743,9 @@ $(function(){
                 $('.antique-right .antique-cover').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
                 $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
                 $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
-                $('.antique-image-container img').css('transition', 'transform 0.5s linear').css('transform', 'translateY(0%)');
+                $('.antique-image-container.imgrev[data-emergence=hidden] img').css('transform', 'scale(1, 1)');
+                $('.antique-cover.imgrev[data-emergence=hidden] img').css('transform', 'scale(1, 1)');
+                $('.about-brown-bg.imgrev[data-emergence=hidden] img').css('transform', 'scale(1, 1)');
                 $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
                 $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
                 emergence.disengage();        
@@ -789,6 +790,15 @@ $(function(){
         speed: 1800,
         arrows: false,
         autoplay: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: false,
+                    dots: true,
+                },
+            },
+        ],
     })
 
 
@@ -798,6 +808,14 @@ $(function(){
         speed: 1500,
         autoplay: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: false,
+                },
+            },
+        ],
 
     })
     project[0].slick.cssTransitions = false;
@@ -809,6 +827,14 @@ $(function(){
         dots: false,
         autoplay: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: false,
+                },
+            },
+        ],
     })
 
     // To style all selects

@@ -41,11 +41,15 @@ $(".slides").slick({
 
 
 $(".never-about-us-slider").slick({
-	speed: 6000,
+	speed: 10000,
+	autoplay: true,
+	autoplaySpeed: 0,
     cssEase: 'linear',
-    autoplay: true,
-    autoplaySpeed: 6000,
+    // autoplay: true,
+    // autoplaySpeed: 6000,
 	infinite: true,
+	pauseOnHover: false,
+	pauseOnFocus: false,
 	arrows: false,
 	slidesToShow: 2,
 	responsive: [

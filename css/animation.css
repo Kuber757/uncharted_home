@@ -418,3 +418,13 @@ transform: scale(1, 1);
 .w-img[data-emergence=hidden]{
 overflow:hidden;
 } */
+
+@media screen and (max-width:767px){
+  .imgrev[data-emergence=hidden] img {
+    /* transform: none; */
+    /* transform: scale(1.1, 1.1); */
+    /* display: none; */
+    /* transform: scale(1, 1); */
+    transform: translateY(100%);
+}
+}

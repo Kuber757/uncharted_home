@@ -88,6 +88,47 @@
 }
 
 @media screen and (max-width:991px){
+    .sign-up-form .dropdown-toggle {
+        width: 100%;
+        background: transparent;
+        color: #fff;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: unset;
+        border-width: 4px;
+    }
+    .inline-btns .signup-btn {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        font-family: laren;
+        padding: 15px 22px;
+        width: 100%;
+        text-transform: uppercase;
+    }.inline-btns .sign-btn {
+        width: 100%;
+        background-color: #fff;
+        color: #9a765c;
+        border: 1px solid #fff;
+        font-family: laren;
+        padding: 15px 22px;
+        text-transform: uppercase;
+    }
+    .login-bg .sign-up-form .form-control {
+        width: 100%;
+        background: transparent;
+        border-bottom: 4px solid #fff;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-radius: unset;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    .work-preview .row {
+        height: auto;
+    }
     .material-section {
         background: #f3eee8;
         padding-top: 50px;
@@ -157,8 +198,8 @@
     .mobile-nav:after {
         content: "";
         background: url(../images/menulogo.svg);
-        width: 113px;
-        height: 188px;
+        width: 183px;
+        height: 300px;
         background-size: cover;
         background-repeat: no-repeat;
         display: block;
@@ -166,15 +207,7 @@
         right: 0;
         bottom: 0;
     }
-    .contact-info h2 {
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 50px;
-        text-align: center;
-        color: #f7f6ef;
-        padding-top: 120px;
-        padding-bottom: 30px;
-    }
+    
     .contact-accordion, .contact-form, .contact-info, .contact-info-head {
         width: 100%;
     }
@@ -183,16 +216,17 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-start;
-        padding: 40px 0;
+        padding: 30px 0 10px 0px;
     }
     
     .contact-info-head h2 {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 36px;
+        line-height: 1;
         text-align: center;
-        color: #f7f6ef;
+        color: #98765c;
         padding-bottom: 20px;
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
+        padding: 0;
     }
     .contact-form form {
         max-width: 600px;
@@ -354,6 +388,39 @@
 }
 
 @media  screen and (max-width:720px) {
+    .address-btn {
+        
+        max-width: 200px;
+        
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -19px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .uncharted-text {
+        padding: 0px 15px;
+        color: #98765c;
+        font-size: 17px;
+        font-family: laren-light;
+        line-height: 1.5;
+    }
+    .contact-heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        margin: 70px auto auto auto;
+        color: #98765c;
+        padding-left: 0;
+        max-width: 600px;
+        /* width: 100%; */
+        text-align: center;
+    }
     
     .never-about-us-mob  .slick-next {
         font-size: 0;
@@ -395,29 +462,21 @@
         display: none;
     }
 
-    .contact-info h2 {
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 50px;
-        text-align: center;
-        color: #f7f6ef;
-        padding-top: 70px;
-        padding-bottom: 0;
-    }
+    
     #accordion .card-body {
         font-size: 12px;
     }
     .contact-form .form-control, .contact-form .form-control:focus {
         background: transparent;
         border: none;
-        border-bottom: 1px solid #f7f6ef;
+        border-bottom: 1px solid #98765c;
         border-radius: 0;
         width: 100%;
         font-weight: 400;
         color: #f7f6ef;
         margin: 20px 0px;
         font-size: 14px;
-        line-height: 4;
+        /* line-height: 4; */
 
     }
     .contact-form textarea.form-control {
@@ -426,7 +485,7 @@
         line-height: 3;
     }
     #accordion .card-header a {
-        color: #fff;
+        color: #98765c;
         text-decoration: none;
         background-color: transparent;
         font-family: 'myFirstFont';
@@ -461,7 +520,7 @@
         color: #99765c;
         font-size: 30px;
         position: absolute;
-        top: 0;
+        top: 600%;
         left: -15px;
       }
       
@@ -469,10 +528,10 @@
         content: ">";
         color: #99765c;
         position: absolute;
-        top: 0;
+        top: 600%;
         right: -15px;
         font-size: 30px;
-      }
+    }
     .never-about-us .text-card h3 {
         font-size: 32px;
     }
@@ -627,7 +686,7 @@
     }
     .project-section h3 {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 21px;
         line-height: initial;
         color: #9a765c;
         text-align: center;
@@ -762,7 +821,7 @@
     }
     ul.nav li {
         margin-right: unset;
-        margin-bottom: 16px;
+        margin-bottom: 27px;
     }
     .navbar li a {
         font-size: 35px;
@@ -773,6 +832,12 @@
 
 
 @media screen and (max-width:320px){
+    .slick-next:before {
+        top: 0%;
+    }
+    .slick-prev:before{
+        top: 0%;
+    }
     .about-1 {
         display: flex;
         flex-direction: column;

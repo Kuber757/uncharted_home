@@ -24,11 +24,11 @@
 			<img src="images/logo3sec.gif">
 		</div>
 	</section>
-	<section class="nav-bg">
-		<div class="container-fluid px-0 px-lg-3 px-md-3">
+	<section class="nav-bg w-100">
+		<div class="container-fluid px-0 px-lg-3 px-md-1">
 			<div class="page-wrapper">
 				<div class="nav-wrapper">
-					<nav class="navbar">
+					<nav class="navbar px-md-1">
 						<a href="index.html">
 							<div class="logo">
 								<img src="images/logo_icon.svg" class="logoicon" alt="logo">
@@ -113,7 +113,7 @@
 	<section class="mob-img-wrapper d-lg-none d-md-none d-block">
 		<img src="images/mobile-gif/v2.gif" class="w-100">
 	</section>
-	<section class="never-about-us pb-3 mb-lg-5">
+	<section class="never-about-us pb-1 mb-lg-5 mb-md-5">
 		<div class="bg-container">
 			<div class="container-fluid">
 				<div class="row">
@@ -480,20 +480,22 @@
 	$(".mob-slides").slick({
 		asNavFor: '.captions',
 		infinite: false,
-		speed: 200,
+		speed: 1000,
 		arrows: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
+
 
 	})
 
 	$(".mob-captions").slick({
 		asNavFor: '.slides',
 		infinite: false,
-		speed: 200,
+		speed: 1000,
 		fade: true,
 		arrows: false,
+		autoplay: true,
 	})
 </script>
 

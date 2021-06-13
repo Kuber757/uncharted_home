@@ -76,6 +76,12 @@ body, ::-webkit-scrollbar, .imgrev::before {
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
+.heading-container {
+  overflow: hidden;
+  color: #98765c;
+}
+
+
 .swiper-button-prev:before {
     border-width: 8px 8px 0 0;
     right: auto;

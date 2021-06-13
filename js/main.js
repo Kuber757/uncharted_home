@@ -41,7 +41,7 @@ $(".slides").slick({
 
 
 $(".never-about-us-slider").slick({
-	speed: 10000,
+	speed: 15000,
 	autoplay: true,
 	autoplaySpeed: 0,
     cssEase: 'linear',

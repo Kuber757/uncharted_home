@@ -18,11 +18,11 @@
 <body class="page-contact">
 	<div class="cursor"></div>
 	<div class="cursor"></div>
-	<section class="nav-bg">
-		<div class="container-fluid px-0 px-lg-3 px-md-3">
+	<section class="nav-bg w-100">
+		<div class="container-fluid px-0 px-lg-3 px-md-1">
 			<div class="page-wrapper">
 				<div class="nav-wrapper">
-					<nav class="navbar">
+					<nav class="navbar px-md-1">
 						<a href="index.html">
 							<div class="logo">
 								<img src="images/logo_icon.svg" class="logoicon" alt="logo">
@@ -51,14 +51,14 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="contact-upper">
-							<div class="contact-info">
+							<div class="contact-info w-100">
 								<h2 class="contact-heading">Get in touch</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row contact-display">
-					<div class="contact-info col-lg-6 col-12">
+					<div class="contact-info col-lg-6 col-md-6 col-12 order-12 order-lg-0 order-md-0 mt-lg-0 mt-5">
 						<div class="first">
 							<p class="uncharted-text">Do you want to know more regarding Uncharted? We'd be happy
 								to hear from you.
@@ -67,11 +67,12 @@
 								Us</button>
 							<button class="address-btn mb-4"><i class="fas mr-4 fa-envelope"></i> E-mail
 								Us</button>
-							<button class="address-btn mb-4"><i class="fas mr-4 fa-download"></i> Company Profile </button>
+							<button class="address-btn mb-4"><i class="fas mr-4 fa-download"></i> Company Profile
+							</button>
 						</div>
 					</div>
-					<div class="contact-form col-lg-6 col-12">
-						<form class="ajaxForm contact-form-layout px-5 px-lg-0" autocomplete="off"
+					<div class="contact-form col-lg-6 col-md-6 col-12">
+						<form class="ajaxForm contact-form-layout px-5 px-md-3 px-lg-0" autocomplete="off"
 							action="https://formcarry.com/s/_WbQAjaP-xj" accept-charset="UTF-8">
 							<div class="form-group">
 								<input type="text" placeholder="FULL NAME" name="name" id="formBasicPassword"
@@ -82,8 +83,8 @@
 									class="form-control" />
 							</div>
 							<div class="form-group">
-								<input type="tel" maxlength="10" placeholder="PHONE" name="number" id="formBasicPassword"
-									class="form-control" />
+								<input type="tel" maxlength="10" placeholder="PHONE" name="number"
+									id="formBasicPassword" class="form-control" />
 							</div>
 							<div class="form-group">
 								<textarea placeholder="MESSAGE" name="message" id="exampleForm.ControlTextarea1"
@@ -336,20 +337,24 @@
 		});
 	});
 
-	setTimeout(function () {
-		if ($('.contact-upper').isInViewport()) {
-			$('.contact-info h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
-			setTimeout(function () {
-				$('.contact-info div').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
-			}, 1000);
-			setTimeout(function () {
-				$('.contact-form .ajaxForm').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
-			}, 2000);
-		} else {
-			$('.contact-info h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
-			$('.contact-form .ajaxForm').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
-		}
-	}, 1000);
+	if (window.innerWidth > 767) {
+
+		setTimeout(function () {
+			if ($('.contact-upper').isInViewport()) {
+				$('.contact-info h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+				setTimeout(function () {
+					$('.contact-info div').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
+				}, 500);
+				setTimeout(function () {
+					$('.contact-form .ajaxForm').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
+				}, 1000);
+			} else {
+				$('.contact-info h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
+				$('.contact-form .ajaxForm').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
+			}
+		}, 1000);
+
+	}
 
 	var lastScroll = 0;
 	$(window).on('resize scroll', function () {
@@ -378,6 +383,26 @@
 		$('.contact-accordion-box').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)').css('height', '0');
 		myFunction();
 	})
+
+
+	if (window.innerWidth < 767) {
+
+		setTimeout(function () {
+			if ($('.contact-upper-img').isInViewport()) {
+				$('.contact-info h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+				setTimeout(function () {
+					$('.contact-form .ajaxForm').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
+					setTimeout(function () {
+						$('.contact-display .first').css('transition', 'transform 0.3s linear').css('transform', 'translateY(0%)');
+					}, 1000)
+				}, 1000)
+			} else {
+				$('.contact-info h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
+				$('.contact-form .ajaxForm').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
+			}
+		}, 1000);
+
+	}
 </script>
 
 </html>

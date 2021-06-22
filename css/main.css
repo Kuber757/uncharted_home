@@ -15,7 +15,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 9999;
+  z-index: 99999;
   height: 100vh;
 }
 html {
@@ -204,6 +204,22 @@ textarea {
 }
 
 .moving-line {
+  width: 365px;
+  background-color: #896249;
+}
+.moving-line-material {
+  width: 365px;
+  background-color: #896249;
+}
+.moving-line-contact {
+  width: 365px;
+  background-color: #896249;
+}
+.moving-line-antique{
+  width: 365px;
+  background-color: #896249;
+}
+.moving-line-project{
   width: 365px;
   background-color: #896249;
 }
@@ -567,6 +583,7 @@ h2 {
   background: #9a765c !important;
   color: #fff !important;
   border: 1px solid #9a673d !important;
+  outline: none;
 }
 .outline-button {
   border-radius: 0.25rem;
@@ -918,6 +935,11 @@ h2 {
 }
 .future-antiques {
   padding: 130px 15px;
+  overflow-x: hidden;
+  background-color: #f3f3eb;
+    position: relative;
+    background-image: url(../images/final-antiques.gif);
+    background-repeat: no-repeat;
 }
 .project-section {
   padding: 100px 0px;
@@ -1053,6 +1075,8 @@ ul.nav li {
   position: relative;
   background-image: url(../images/about2.png);
 }
+
+
 .metlist {
   display: flex;
   justify-content: center;
@@ -1294,6 +1318,7 @@ ul.nav li {
 
 .material-slider {
   background-image: url(../images/final-mat.gif);
+  background-position: bottom;
 }
 .material-slider h3 {
   font-style: normal;

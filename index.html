@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/loader.css">
 	<link rel="stylesheet" href="css/responsive.css" />
 </head>
 
@@ -21,7 +22,7 @@
 	<div class="cursor"></div>
 	<section id="loader">
 		<div class="gif-wrapper">
-			<img src="images/logo3sec.gif">
+			<img src="images/homepage-loader.gif">
 		</div>
 	</section>
 	<section class="nav-bg w-100">
@@ -81,11 +82,16 @@
 	<section class="mob-img-wrapper d-lg-none d-md-none d-block">
 		<img src="images/mobile-gif/v2.gif" class="w-100">
 	</section>
-	<section class="about-2">
+	<section class="about-2 d-lg-block d-md-block d-none">
 		<div class="about-2-bg">
-			<h2 class="transformable-text">A Quest for Perfection</h2>
+			<!-- <h2 class="transformable-text">A Quest for Perfection</h2> -->
 		</div>
 	</section>
+	<section class="met3 material-hero d-lg-none d-md-none d-block">
+        <div class="material1">
+            <img src="images/access.png">
+        </div>
+    </section>
 
 	<div class="about-second-bg-container">
 		<section class="about-1">
@@ -442,7 +448,7 @@
 	function myFunction() {
 		setTimeout(function () {
 			$("#loader").fadeOut('slow');
-		}, 3000);
+		}, 3500);
 	}
 	$(document).ready(function () {
 		myFunction();
@@ -469,10 +475,16 @@
 					$(ele).css('transition', 'all 0s linear').css('transform', 'translateY(100%)');
 				}
 			});
+			if ($('.met3.material-hero').isInViewport()) {
+                $('.met3.material-hero').css('transition', 'transform 0.5s linear').css('transform', 'translateX(0%)');
+            } else {
+                $('.met3.material-hero').css('transition', 'transform 0s linear').css('transform', 'translateX(-80%)');
+            }
 		}
 		else {
 			$('.transformable-text').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
 			$('.about-2').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
+			$('.met3.material-hero').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
 		}
 		lastScroll = scroll;
 	});

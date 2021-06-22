@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -20,7 +21,7 @@
     <div class="cursor"></div>
     <section id="loader">
         <div class="gif-wrapper">
-            <img src="images/logo3sec.gif">
+            <img src="images/homepage-loader.gif">
         </div>
     </section>
     <section class="nav-bg w-100">
@@ -50,8 +51,8 @@
             </div>
         </div>
     </section>
-    <section class="met1 material-hero pt-lg-0 pt-5">
-        <div class="material1 pt-lg-0 pt-2">
+    <section class="met1 material-hero pt-lg-0 pt-md-0 pt-0">
+        <div class="material1 pt-lg-0 pt-0 pt-md-2">
             <img src="images/material-group.png" class="d-lg-block d-md-block d-none">
             <img src="images/material-mob-banner.jpeg" class="d-block d-lg-none d-md-none">
         </div>
@@ -513,7 +514,7 @@
     function myFunction() {
         setTimeout(function () {
             $("#loader").fadeOut('slow');
-        }, 3000);
+        }, 3500);
     }
     $(document).ready(function () {
         myFunction();

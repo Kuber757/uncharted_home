@@ -35,7 +35,7 @@ $(".slides").slick({
 	infinite: false,
 	speed: 2000,
 	arrows: false,
-	autoplay: false,
+	autoplay: true,
 	// fade: true,
 })
 
@@ -79,7 +79,7 @@ $(".captions").slick({
 	speed: 2000,
 	// fade: true,
 	dots: false,
-	autoplay: false,
+	autoplay: true,
 	arrows: false,
 	responsive: [
 

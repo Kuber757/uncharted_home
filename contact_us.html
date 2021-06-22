@@ -343,16 +343,16 @@
 			if ($('.contact-upper').isInViewport()) {
 				$('.contact-info h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
 				setTimeout(function () {
-					$('.contact-info div').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
-				}, 500);
+					$('.contact-info div').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+				}, 300);
 				setTimeout(function () {
-					$('.contact-form .ajaxForm').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
-				}, 1000);
+					$('.contact-form .ajaxForm').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+				}, 700);
 			} else {
 				$('.contact-info h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
 				$('.contact-form .ajaxForm').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
 			}
-		}, 1000);
+		}, 700);
 
 	}
 
@@ -363,7 +363,7 @@
 			if ($('.contact-down').isInViewport()) {
 				$('.contact-info-head h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
 				setTimeout(function () {
-					$('.contact-accordion-box').css('transition', 'transform 0.3s linear').css('transform', 'translateY(0%)').css('height', '250px');;
+					$('.contact-accordion-box').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)').css('height', '250px');;
 				}, 500);
 			} else {
 				// $('.contact-info-head h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
@@ -391,16 +391,16 @@
 			if ($('.contact-upper-img').isInViewport()) {
 				$('.contact-info h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
 				setTimeout(function () {
-					$('.contact-form .ajaxForm').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
+					$('.contact-form .ajaxForm').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
 					setTimeout(function () {
-						$('.contact-display .first').css('transition', 'transform 0.3s linear').css('transform', 'translateY(0%)');
-					}, 1000)
-				}, 1000)
+						$('.contact-display .first').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+					}, 300)
+				}, 700)
 			} else {
 				$('.contact-info h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
 				$('.contact-form .ajaxForm').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
 			}
-		}, 1000);
+		}, 700);
 
 	}
 </script>

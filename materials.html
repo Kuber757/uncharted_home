@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script>
+        const hasSupport = 'loading' in HTMLImageElement.prototype;
+        document.documentElement.className = hasSupport ? 'pass' : 'fail';
+        var element = document.querySelector("span")
+        if(element){
+        element.textContent = hasSupport;
+        }
+    </script>
 </head>
 
 <body>
@@ -53,8 +61,8 @@
     </section>
     <section class="met1 material-hero pt-lg-0 pt-md-0 pt-0">
         <div class="material1 pt-lg-0 pt-0 pt-md-2">
-            <img src="images/material-group.png" class="d-lg-block d-md-block d-none">
-            <img src="images/material-mob-banner.jpeg" class="d-block d-lg-none d-md-none">
+            <img src="images/material-group.png" loading="lazy" class="d-lg-block d-md-block d-none">
+            <img src="images/material-mob-banner.jpeg" loading="lazy" class="d-block d-lg-none d-md-none">
         </div>
     </section>
     <section class="mat2">
@@ -69,7 +77,7 @@
     </section>
     <section class="met3 material-hero">
         <div class="material1">
-            <img src="images/japanese.jpeg">
+            <img src="images/japanese.jpeg" loading="lazy">
         </div>
     </section>
     <section class="met4 about-1">
@@ -82,7 +90,7 @@
         </div>
     </section>
     <section class="mob-img-wrapper d-lg-none d-md-none d-block">
-        <img src="images/mobile-gif/v2.gif" class="w-100">
+        <img src="images/mobile-gif/v2.gif" loading="lazy" class="w-100">
     </section> 
     <section class="met5 d-lg-block d-md-none d-none" id="material-list">
         <div class="metlist">
@@ -145,12 +153,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="material1 main-gif"><img src="images/material banner.gif"></div>
+            <div class="material1 main-gif"><img src="images/material banner.gif" loading="lazy"></div>
             <div class="hover-materials material1 mop-gif d-none">
-                <img src="images/Mother of pearl/mop 2.jpg">
+                <img src="images/Mother of pearl/mop 2.jpg" loading="lazy">
             </div>
             <div class="hover-materials material1 selenite-gif d-none">
-                <img src="images/selenite.jpg">
+                <img loading="lazy" src="images/selenite.jpg">
             </div>
         </div>
     </section>
@@ -158,7 +166,7 @@
         <div class="container-fluid px-0">
             <div class="col-12 px-0">
                 <div class="img-material-gif">
-                    <img src="images/material banner.gif">
+                    <img loading="lazy" src="images/material banner.gif">
                 </div>
             </div>
             <div class="col-12 px-0">
@@ -179,7 +187,7 @@
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/Mother of pearl/mop 2.jpg">
+                                <img loading="lazy" src="images/Mother of pearl/mop 2.jpg">
                                 <a href="mother-of-pearl.html">
                                     <button class="material-btn">
                                     View More
@@ -200,7 +208,7 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/selenite.jpeg">
+                                <img loading="lazy" src="images/selenite.jpeg">
                                 <a href="selenite.html">
                                     <button class="material-btn">
                                     View More
@@ -221,7 +229,7 @@
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/stone.jpg">
+                                <img loading="lazy" src="images/stone.jpg">
                                 <a href="stone.html">
                                     <button class="material-btn">
                                     View More
@@ -242,7 +250,7 @@
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/glass.jpg">
+                                <img loading="lazy" src="images/glass.jpg">
                                 <a href="glass.html">
                                     <button class="material-btn">
                                     View More
@@ -263,7 +271,7 @@
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/wood.jpeg">
+                                <img loading="lazy" src="images/wood.jpeg">
                                 <a href="wood.html">
                                     <button class="material-btn">
                                     View More
@@ -284,7 +292,7 @@
                         <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/metal.jpeg">
+                                <img loading="lazy" src="images/metal.jpeg">
                                 <a href="metal.html">
                                     <button class="material-btn">
                                     View More
@@ -305,7 +313,7 @@
                         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/brass.jpeg">
+                                <img loading="lazy" src="images/brass.jpeg">
                                 <a href="brass.html">
                                     <button class="material-btn">
                                     View More
@@ -326,7 +334,7 @@
                         <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/tikri1.jpg">
+                                <img loading="lazy" src="images/tikri1.jpg">
                                 <a href="mirror.html">
                                     <button class="material-btn">
                                     View More
@@ -347,7 +355,7 @@
                         <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/leafing.jpg">
+                                <img loading="lazy" src="images/leafing.jpg">
                                 <a href="leafing.html">
                                     <button class="material-btn">
                                     View More
@@ -368,7 +376,7 @@
                         <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/fabric.png">
+                                <img loading="lazy" src="images/fabric.png">
                                 <a href="fabric.html">
                                     <button class="material-btn">
                                     View More
@@ -389,7 +397,7 @@
                         <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/stingray.jpg">
+                                <img loading="lazy" src="images/stingray.jpg">
                                 <a href="stingray.html">
                                     <button class="material-btn">
                                     View More
@@ -410,7 +418,7 @@
                         <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/straw.jpg">
+                                <img loading="lazy" src="images/straw.jpg">
                                 <a href="marquetry.html">
                                     <button class="material-btn">
                                     View More
@@ -431,7 +439,7 @@
                         <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img src="images/semi-precious.jpg">
+                                <img loading="lazy" src="images/semi-precious.jpg">
                                 <a href="precious-stone.html">
                                     <button class="material-btn">
                                     View More
@@ -451,9 +459,9 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="footer-logo">
-                                <div class="icon"><img src="images/logo_icon.svg" alt="logo"></div>
-                                <div class="icon-text"><img src="images/logo_text.svg" alt="logo"></div>
-                                <div class="tag-line"><img src="images/tagline.svg" alt="logo"></div>
+                                <div class="icon"><img loading="lazy" src="images/logo_icon.svg" alt="logo"></div>
+                                <div class="icon-text"><img loading="lazy" src="images/logo_text.svg" alt="logo"></div>
+                                <div class="tag-line"><img loading="lazy" src="images/tagline.svg" alt="logo"></div>
                             </div>
                         </div>
                         <div class="col-md-4">

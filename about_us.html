@@ -83,7 +83,7 @@
                 <div class="row align-items-top align-items-md-center">
                     <div class="col-lg-6 col-md-6 col-12 order-lg-0 order-md-0 order-11 about-us-container mt-lg-0 mt-md-0 mt-5">
                         <div class="fix-height pt-md-5">
-                            <div class="about-brown-bg text-left" data-animation="show"><img src="images/test-img.png"
+                            <div class="about-brown-bg text-left" data-animation="show"><img src="images/test-img.jpg"
                                     alt=""></div>
                         </div>
                     </div>
@@ -139,22 +139,57 @@
                         <div class="homepage-slides">
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/selenite.jpg">
+                                    <img class="transform-target" src="images/materials/eggshell-1.jpg">
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/semi-precious.jpg">
+                                    <img class="transform-target" src="images/materials/eggshell.jpg">
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/straw.jpg">
+                                    <img class="transform-target" src="images/materials/metal option.jpg">
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/eggshell.jpg">
+                                    <img class="transform-target" src="images/materials/raffia.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/materials/selenite-1.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/materials/selenite-2.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/materials/selenite.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/materials/stone texture.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/materials/straw-1.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/materials/straw.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/materials/wood carving.jpg">
                                 </div>
                             </div>
                         </div>
@@ -405,7 +440,7 @@
                                 <form class="newsletterForm" action="https://formcarry.com/s/_WbQAjaP-xj"
                                     accept-charset="UTF-8">
                                     <div class="newsletter-form">
-                                        <div class="row">
+                                        <div class="row py-2">
                                             <h1 class="text-center mb-0 col-12 mb-2">ENQUIRY</h1>
                                             <div class="col-6 mb-lg-3 mb-2 px-lg-3 px-md-1 px-1">
                                                 <input type="text" name="first_name" class="form-control"
@@ -541,12 +576,12 @@
         $(".mute-btn").show();
     }
 
-    if($(window).width() < 720){
+    /*if($(window).width() < 720){
         $(".about-brown-bg").removeAttr('data-animation');
     }
     else{
         $(".about-brown-bg").attr('data-animation','show');
-    }
+    }*/
 
 
 
@@ -557,34 +592,34 @@
         var scroll = $(window).scrollTop();
         if (scroll > lastScroll) {
 
-            // if(window.innerWidth <= 767) {
-            //     console.log("test test");
-            // if($('.aboutus-section').isInViewport()){
-            //     setTimeout(function () {
-            //         $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
-            //         setTimeout(function () {
-            //             $('.moving-line').css('transition', 'all 0.4s linear').css('width', '365px');
-            //             setTimeout(function () {
-            //                 $('.aboutus-section .about-us-para p').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
-            //                 setTimeout(function () {
-            //                     $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:0%;}</style>');
-            //                     setTimeout(function () {
-            //                         $('.aboutus-section button').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
-            //                     }, 500)
-            //                 }, 500)
-            //             }, 500)
-            //         }, 500)
-            //     },200)
-            // }
-            // else
-            // {
-            //     $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:100%;}</style>');
-            //     $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(140%)');
-            //     $('.aboutus-section .about-us-para p').css('transform', 'translateY(140%)');
-            //     $('.aboutus-section button').css('transform', 'translateY(140%)');
-            //     $('.moving-line').css('transition', 'all 0s linear').css('width', '0px');
-            // }
-            // }
+            if(window.innerWidth <= 767) {
+                console.log("test test");
+            if($('.aboutus-section').isInViewport()){
+                setTimeout(function () {
+                    $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                    setTimeout(function () {
+                        $('.moving-line').css('transition', 'all 0.4s linear').css('width', '365px');
+                        setTimeout(function () {
+                            $('.aboutus-section .about-us-para p').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                            setTimeout(function () {
+                                $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:0%;}</style>');
+                                setTimeout(function () {
+                                    $('.aboutus-section button').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                                }, 500)
+                            }, 500)
+                        }, 500)
+                    }, 500)
+                },200)
+            }
+            else
+            {
+                $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:100%;}</style>');
+                $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(140%)');
+                $('.aboutus-section .about-us-para p').css('transform', 'translateY(140%)');
+                $('.aboutus-section button').css('transform', 'translateY(140%)');
+                $('.moving-line').css('transition', 'all 0s linear').css('width', '0px');
+            }
+            }
 
 
             if ($('.aboutus-section').isInViewport()) {
@@ -639,7 +674,6 @@
                 $('head').append('<style>.antique-right .antique-cover::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
                 $('head').append('<style>.antique-image-container::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
                 // setTimeout(function () {
-
                     setTimeout(function () {
                         $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:0%;}</style>');
                         setTimeout(function () {

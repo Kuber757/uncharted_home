@@ -627,6 +627,22 @@
 
 
 @media  screen and (max-width:720px) {
+    .about-brown-bg img {
+        position: relative;
+        top: unset;
+        transform: inherit;
+        left: unset;
+        width: 100%;
+        height: initial;
+    }
+    .about-brown-bg {
+        width: 100%;
+        height: auto;
+        background: transparent;
+        position: relative;
+        max-height: initial;
+        margin-top: 0px;
+    }
     .aboutus-section {
         padding: 0;
         height: auto;

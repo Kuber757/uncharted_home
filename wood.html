@@ -6,6 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#99765c">
+    <script>
+        const hasSupport = 'loading' in HTMLImageElement.prototype;
+        document.documentElement.className = hasSupport ? 'pass' : 'fail';
+        var element = document.querySelector("span")
+        if(element){
+        element.textContent = hasSupport;
+        }
+    </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -25,7 +33,7 @@
 	<div class="cursor"></div>
     <section id="loader">
         <div class="gif-wrapper">
-            <img src="images/homepage-loader.gif">
+            <img loading="lazy" src="images/homepage-loader.gif">
         </div>
     </section>
     <section class="nav-bg">
@@ -35,8 +43,8 @@
                     <nav class="navbar">
                         <a href="index.html">
                             <div class="logo">
-                                <img src="images/logo_icon.svg" class="logoicon" alt="logo">
-                                <img src="images/logo_text.svg" class="logotext" alt="logo">
+                                <img loading="lazy" src="images/logo_icon.svg" class="logoicon" alt="logo">
+                                <img loading="lazy" src="images/logo_text.svg" class="logotext" alt="logo">
                             </div>
                         </a>
                     </nav>
@@ -57,7 +65,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="material-img-wrap">
-                            <img src="images/wood.jpeg">
+                            <img loading="lazy" src="images/wood.jpeg">
                         </div>
                     </div>
                 </div>

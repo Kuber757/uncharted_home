@@ -351,6 +351,10 @@ textarea {
   font-family: "laren-italic";
   src: url(../css/fonts/LarkenLightItalic.ttf);
 }
+@font-face {
+  font-family: "times new roman";
+  src: url(../css/fonts/times_new_roman.ttf);
+}
 
 .met5-left-side a {
   color: #fff;
@@ -1603,29 +1607,29 @@ input {
   }
 
   .navbar li:nth-child(odd) {
-    text-align: left;
+    text-align: center;
   }
 
   .navbar li:nth-child(odd)::before {
-    counter-increment: section;
+    /* counter-increment: section;
     content: "0" counter(section);
     position: absolute;
     top: 0;
     left: 12px;
-    color: #fff;
+    color: #fff; */
   }
 
   .navbar li:nth-child(even) {
-    text-align: right;
+    text-align: center;
   }
 
   .navbar li:nth-child(even)::after {
-    counter-increment: section;
+    /* counter-increment: section;
     content: "0" counter(section);
     position: absolute;
     top: 0;
     right: 12px;
-    color: #fff;
+    color: #fff; */
   }
 
   .navbar li:first-child {
@@ -1909,10 +1913,10 @@ input {
   border-radius: 0;
   font-weight: 400;
   color: #98765c;
-  font-style: italic;
+  font-style: normal;
   font-size: 20px;
   box-shadow: unset;
-  font-family: "laren-italic";
+  font-family: "times new roman";
   margin: 37px auto;
 }
 .contact-down {
@@ -1930,7 +1934,7 @@ input {
 .contact-info-head h2 {
   font-style: normal;
   font-weight: 400;
-  font-size: 100px;
+  font-size: 70px;
   line-height: 1;
   color: #98765c;
   padding-left: 0;
@@ -1970,13 +1974,13 @@ input {
 }
 
 #accordion .card-header {
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 0;
-  background-color: rgb(247 245 236);
-  display: flex;
-  border-bottom: 1px solid rgb(247 245 236);
-  justify-content: space-between;
-  align-items: center;
+  padding: 0.15rem 1.75rem;
+    margin-bottom: 0;
+    background-color: rgb(247 245 236);
+    display: flex;
+    border-bottom: 1px solid rgb(247 245 236);
+    justify-content: space-between;
+    align-items: center;
 }
 
 #accordion .fa-angle-down {

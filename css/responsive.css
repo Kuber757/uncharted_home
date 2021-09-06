@@ -974,24 +974,24 @@
         padding: 10px 0px 0px 0px;
     }
     .navbar li:nth-child(odd)::before {
-        counter-increment: section;
+        /* counter-increment: section;
         content: "0" counter(section);
         position: absolute;
         top: 0;
         left: 7px;
         color: #fff;
         font-style: italic;
-        font-family: 'myFirstFont';
+        font-family: 'myFirstFont'; */
     }
     .navbar li:nth-child(even)::after {
-        counter-increment: section;
+        /* counter-increment: section;
         content: "0" counter(section);
         position: absolute;
         top: 0;
         right: 12px;
         color: #fff;
         font-family: 'myFirstFont';
-        font-style: italic;
+        font-style: italic; */
     }
     
     .never-about-us-mob{

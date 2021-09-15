@@ -201,7 +201,7 @@
         z-index: 9999;
     }
     
-    .mobile-nav:after {
+    /* .mobile-nav:after {
         content: "";
         background: url(../images/menulogo.svg);
         width: 183px;
@@ -212,7 +212,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-    }
+    } */
     
     .contact-accordion, .contact-form, .contact-info, .contact-info-head {
         width: 100%;
@@ -627,6 +627,22 @@
 
 
 @media  screen and (max-width:720px) {
+    .embassies-heading{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;}
+        .full-address {
+            font-size: 21px;
+            text-align: center;
+            margin-left: unset;
+        }
+        #accordion .card-header a {
+            color: #98765c;
+            text-decoration: none;
+            background-color: transparent;
+            font-family: 'myFirstFont';
+            font-size: 23px;
+        }
     .about-brown-bg img {
         position: relative;
         top: unset;
@@ -845,13 +861,7 @@
         resize: none;
         line-height: 3;
     }
-    #accordion .card-header a {
-        color: #98765c;
-        text-decoration: none;
-        background-color: transparent;
-        font-family: 'myFirstFont';
-        font-size: 18px;
-    }
+
     .project-section {
         padding: 100px 0px 0px 0px;
     }

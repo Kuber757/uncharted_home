@@ -52,7 +52,7 @@
 					<div class="col-12">
 						<div class="contact-upper">
 							<div class="contact-info w-100">
-								<h2 class="contact-heading">Get in touch</h2>
+								<h2 class="contact-heading">CONNECT WITH US</h2>
 							</div>
 						</div>
 					</div>
@@ -68,13 +68,15 @@
 										<i class="fas mr-4 fa-envelope"></i> E-mail Us
 								</button>
 							</a>
-							<button class="address-btn mb-4"><i class="fas mr-4 fa-download"></i> Company Profile
-							</button>
+							<a href="uncharted_profile.pdf" target="_blank" style="color:#98765c">
+								<button class="address-btn mb-4"><i class="fas mr-4 fa-download"></i> Company Profile
+								</button>
+							</a>
 						</div>
 					</div>
 					<div class="contact-form col-lg-6 col-md-6 col-12">
 						<form class="ajaxForm contact-form-layout px-5 px-md-3 px-lg-0" autocomplete="off"
-							action="https://formcarry.com/s/_WbQAjaP-xj" accept-charset="UTF-8">
+							action="https://formcarry.com/s/aK4D9fCldNX" accept-charset="UTF-8">
 							<div class="form-group">
 								<input type="text" placeholder="FULL NAME" name="name" id="formBasicPassword"
 									class="form-control" />
@@ -101,13 +103,34 @@
 		</div>
 		<div class="get-in-touch-bg"></div>
 		<div class="contact-down-img">
-			<div class="container-fluid px-lg-3 px-3">
-				<div class="contact-down">
-					<div class="contact-info-head">
-						<h2>Uncharted Embassies Worldwide</h2>
+			<div class="container px-lg-3 px-3">
+				<div class="row">
+					<div class="col-12">
+						<div class="contact-upper">
+							<div class="contact-info w-100">
+								<h2 class="embassies-heading">Uncharted Embassies Worldwide</h2>
+							</div>
+						</div>
 					</div>
-					<div class="contact-accordion">
-						<div class="contact-accordion-box">
+				</div>
+				<div class="row my-lg-5 my-2">
+					<div class="col-lg-6 col-md-6 col-12">
+						<div class="d-flex justify-content-lg-left justify-content-md-left justify-content-center">
+							<!-- <i class="fa fa-envelope footer-address-icon"></i> -->
+							<p class="full-address">
+								<span class="address-heading">
+									HeadOffice: <br>
+								</span>
+								
+								<span class="h4">Uncharted</span><br>
+								Dutch Ocean BV<br>
+								Oudelandselaan 247<br>
+								2652 ER Berkel en Rodenrijs <br>
+								The Netherlands</p>
+						</div>
+					</div>
+					<div class="contact-accordion col-lg-6 col-md-6 col-12">
+						<div class="contact-accordion-box mt-lg-0 mt-3 mt-md-0">
 							<div id="accordion">
 								<!-- <div class="card">
                   <div class="card-header">
@@ -328,7 +351,7 @@
 	<section class="footer">
 		<div class="footer-top">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-md-4">
 						<div class="footer-logo">
 							<div class="icon">
@@ -366,7 +389,14 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-4"></div>
+					<div class="col-md-4 text-lg-left text-md-left text-center">
+						<div class="mt-5 ml-0 ml-lg-5">
+							<h5 class="mb-1 font-white">Website By:</h5>
+							<h5 class="mb-1 font-white">Harsh Mann Luxury Consultancy</h5>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -393,7 +423,7 @@
 				success: function (response) {
 					if (response.status == "success") {
 						$(".ajaxForm").html(`
-                        <h1>We received your submission, thank you!</h1>
+                        <h1 class="submission-text">We received your submission.<br> Thank you!</h1>
                       `)
 					} else {
 						alert("An error occured: " + response.message);
@@ -446,7 +476,7 @@
 	});
 
 	$(document).ready(function () {
-		$('.contact-accordion-box').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)').css('height', '0');
+		// $('.contact-accordion-box').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)').css('height', '0');
 		myFunction();
 	})
 

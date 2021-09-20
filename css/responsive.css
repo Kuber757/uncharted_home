@@ -627,6 +627,10 @@
 
 
 @media  screen and (max-width:720px) {
+    .justify-content{
+        justify-content: center;
+      }
+      
     .embassies-heading{
         font-style: normal;
         font-weight: 400;

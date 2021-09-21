@@ -496,7 +496,7 @@ h2 {
   margin: 0 auto;
   font-family: "myFirstFont";
   font-size: 3vw;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 800;
 }
 .mat2 {
@@ -509,7 +509,7 @@ h2 {
   margin: 0 auto;
   font-family: "myFirstFont";
   font-size: 7vw;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 .material1 img {
   width: 100%;
@@ -1109,6 +1109,7 @@ ul.nav li {
   color: #9a765c;
   font-family: "myFirstFont";
   width: 100%;
+  letter-spacing: 2px;
   /* padding: 100px 0px 0px 0px; */
 }
 
@@ -1144,7 +1145,7 @@ ul.nav li {
   width: 40%;
 }
 .met5-left-side h4 {
-  font-size: 7vw;
+  font-size: 3vw;
   margin: 0 0 10%;
 }
 .met5-left-side ul {
@@ -1278,7 +1279,7 @@ ul.nav li {
 
 .about-1 .paragraph-container {
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 80px;
 }
 
 .mt-120 {
@@ -1871,6 +1872,7 @@ input {
 }
 .contact-display {
   align-items: center;
+  padding: 0px 80px;
 }
 .contact-form .form-control,
 .contact-form .form-control:focus {
@@ -1906,15 +1908,17 @@ input {
   margin: 50px auto auto auto;
   color: #98765c;
   padding-left: 0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   /* max-width: 600px; */
   width: 100%;
   text-align: center;
 }
 
 
-.address-heading{
-  font-size: 28px;
+.address-heading {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-family: 'myFirstFont';
 }
 .footer-address-icon{
   font-size: 39px;
@@ -1922,7 +1926,7 @@ input {
 }
 
 .full-address {
-  font-size: 21px;
+  font-size: 1rem;
   text-align: left;
   margin-left: 20px;
   font-family: 'myFirstFont';
@@ -2029,6 +2033,10 @@ input {
   position: relative;
 }
 
+.padding-lg-contact{
+  padding: 0 180px;
+}
+
 .embassies-heading{
   font-style: normal;
   font-weight: 400;
@@ -2038,6 +2046,7 @@ input {
   /* max-width: 600px; */
   width: 100%;
   text-align: center;
+  letter-spacing: 2px;
 }
 .submission-text {
   color: #9a755d;

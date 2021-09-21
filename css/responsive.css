@@ -627,6 +627,39 @@
 
 
 @media  screen and (max-width:720px) {
+    .submission-text {
+        color: #9a755d;
+        font-family: 'laren';
+        font-size: 14px;
+        font-weight: 300;
+        border: 1px solid #9a755d;
+        border-radius: 12px;
+        padding: 16px 0px;
+    }
+    .padding-lg-contact {
+        padding: 0;
+    }
+    .about-1 .paragraph-container {
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    .contact-display {
+        align-items: center;
+        padding: 0;
+    }
+    .cookies {
+        width: auto;
+        padding: 27px 10px;
+        background: #775c4a;
+        color: #fff;
+        position: fixed;
+        bottom: 10px;
+        border-radius: 22px;
+        height: auto;
+        z-index: 9999;
+        left: 10px;
+        right: 10px;
+    }
     .justify-content{
         justify-content: center;
       }
@@ -636,7 +669,7 @@
         font-weight: 400;
         font-size: 40px;}
         .full-address {
-            font-size: 21px;
+
             text-align: center;
             margin-left: unset;
         }
@@ -645,7 +678,7 @@
             text-decoration: none;
             background-color: transparent;
             font-family: 'myFirstFont';
-            font-size: 23px;
+            /* font-size: 23px; */
         }
     .about-brown-bg img {
         position: relative;
@@ -790,12 +823,13 @@
         font-size: 17px;
         font-family: laren-light;
         line-height: 1.5;
+        text-align:center;
     }
     .contact-heading {
         font-style: normal;
         font-weight: 400;
         font-size: 50px;
-        margin: 70px auto auto auto;
+        margin: 25px auto auto auto;
         color: #98765c;
         padding-left: 0;
         max-width: 600px;
@@ -803,6 +837,9 @@
         text-align: center;
     }
     
+    .address-btn{
+        margin: auto;
+    }
     .never-about-us-mob  .slick-next {
         font-size: 0;
         line-height: 0;
@@ -854,7 +891,7 @@
         border-radius: 0;
         width: 100%;
         font-weight: 400;
-        color: #f7f6ef;
+        color: #9a755d;
         margin: 20px 0px;
         font-size: 14px;
         /* line-height: 4; */

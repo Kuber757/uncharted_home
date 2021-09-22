@@ -290,7 +290,7 @@
         background-size: cover;
         background-position: center;
         position: relative;
-        background-image: url(../images/mob-about2.png);
+        /* background-image: url(../images/mob-about2.png); */
     }
     .about-1 h2 {
         font-size: 7.5vw;
@@ -627,6 +627,26 @@
 
 
 @media  screen and (max-width:720px) {
+    .about-2 h2 {
+        text-align: center;
+        margin: auto;
+        font-size: 10.6vw;
+        color: #fff;
+        opacity: 1;
+    }
+    .mob-material-list .btn-link{
+        font-size:21px;
+    }
+    .about-h4 {
+        font-size: 7vw;
+        color: rgb(154, 118, 92);
+        font-family: myFirstFont;
+        width: 100%;
+        text-align: center;
+        font-weight: 800;
+        margin: 0 auto 1vh auto;
+        letter-spacing: 2px;
+    }
     .submission-text {
         color: #9a755d;
         font-family: 'laren';
@@ -715,6 +735,7 @@
         width: 100%;
         margin: unset;
         padding-left: 0px;
+        letter-spacing: 2px;
     }
     .antique-content{
         max-width: 1060px;
@@ -991,7 +1012,7 @@
         text-align: center;
         top: 40%;
         margin: auto;
-        font-size: 18.6vw;
+        font-size: 10.6vw;
         color: #fff;
         width: 100%;
         line-height: 1;
@@ -1204,7 +1225,7 @@
     }    
     .about-1 p {
         margin: 25px auto 25px auto;
-        font-size: 9px;
+        font-size: 12px;
         color: #8b5e3c;
         max-width: 65vw!important;
         font-weight: 300;

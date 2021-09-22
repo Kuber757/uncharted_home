@@ -325,7 +325,7 @@ of a destination.
                                     <form class="newsletterForm py-md-3" action="https://formcarry.com/s/aK4D9fCldNX"
                                     accept-charset="UTF-8">
                                     <div class="newsletter-form">
-                                        <p class="my-md-2 small" style="font-family:'laren';">Get the latest
+                                        <p class="my-md-2" style="font-family:'laren-light';">Get the latest
                                             updates, discover
                                             exclusive designs and offers straight in your inbox.</p>
                                         <div class="d-flex mb-3 w-100" style="justify-content: space-between;">
@@ -576,6 +576,10 @@ of a destination.
             }, 3500);
         }
         myFunction();
+
+        if (localStorage.hasOwnProperty('cookie')) {
+            $(".cookies").addClass('d-none');
+        }
     })
 
     var vid = document.getElementById("homepage-video");
@@ -583,7 +587,6 @@ of a destination.
         $(".unmute-btn").show();
         $(".mute-btn").hide();
         vid.muted = true;
-        // vid.play();
     })
 
     function enableMute() {
@@ -825,6 +828,8 @@ of a destination.
 
 $('body').on('click','.cookie-btn',function(){
     $(".cookies").addClass('d-none');
+
+    localStorage.setItem('cookie',"1");
 });
 
 </script>

@@ -61,18 +61,16 @@
         </section>
         <section class="video-section">
             <div class="homewrapper_video">
-                <video id="homepage-video" class="d-lg-block d-md-none d-none"  loop autoplay
-                    style="width: 100%; height: 100%;">
-                    <source src="homepage_video.mp4" type="video/mp4">
+                <video controls id="homepage-video-lg" class="d-lg-block d-md-none d-none"  playsinline autoplay muted loop
+                    style="width: 100%; height: 100%;" src="homepage_video.mp4" type="video/mp4">
                 </video>
-                <video id="homepage-video" class="d-lg-none d-md-block d-none"  loop autoplay
-                    style="width: 100%; height: 100%;">
-                    <source src="tab_video.mp4" type="video/mp4">
+                <video controls id="homepage-video-md" class="d-lg-none d-md-block d-none"  playsinline autoplay muted loop
+                    style="width: 100%; height: 100%;" src="tab_video.mp4" type="video/mp4">
                 </video>
-                <video id="homepage-video" class="d-block d-lg-none d-md-none"  loop autoplay
-                    style="width: 100%; height: 100%;">
-                    <source src="mobile-view.mp4" type="video/mp4">
+                <video controls id="homepage-video" class="d-block d-lg-none d-md-none"  playsinline autoplay muted loop
+                    style="width: 100%; height: 100%;" src="mobile-view.mp4" type="video/mp4">
                 </video>
+                
             </div>
             <button onclick="enableMute()" class="mute-btn" type="button"><i class="fas fa-volume-mute"></i></button>
             <button onclick="disableMute()" class="unmute-btn" type="button"><i class="fas fa-volume-off"></i></button>
@@ -126,9 +124,9 @@ of a destination.
         </section>
         <section class="mid-gif d-lg-none d-md-none d-block">
         </section>
-        <section class="material-section my-lg-0 my-md-0 my-5">
+        <section class="material-section my-lg-0 my-md-0 mt-5">
             <div class="material-heading pl-3">
-                <h2>Materials</h2>
+                <h2 class="transformable-text">Materials</h2>
                 <hr class="moving-line-material d-lg-none d-md-none d-block">
             </div>
             <section class="material-slider transform-container py-lg-3 py-3">
@@ -178,7 +176,7 @@ of a destination.
                 <div class="container py-lg-0 py-md-0 py-5">
                     <div class="antiques-animate">
                         <div class="heading-container">
-                            <h2>Antiques of the future</h2>
+                            <h2 class="transformable-text">Antiques of the future</h2>
                             <hr class="moving-line-antique d-lg-none d-md-none d-block">
                         </div>
                         <div class="row mt-lg-5 mt-4 px-lg-0 px-3">
@@ -204,7 +202,7 @@ of a destination.
             </section>
             <section class="project-section">
                 <div class="heading-container pl-3">
-                    <h2>Projects</h2>
+                    <h2 class="transformable-text">Projects</h2>
                     <hr class="moving-line-project d-lg-none d-md-none d-block">
                 </div>
                 <div class="container">
@@ -328,7 +326,7 @@ of a destination.
                                         <p class="my-md-2" style="font-family:'laren-light';">Get the latest
                                             updates, discover
                                             exclusive designs and offers straight in your inbox.</p>
-                                        <div class="d-flex mb-3 w-100" style="justify-content: space-between;">
+                                        <div class="d-lg-flex d-flex d-md-block mb-3 w-100" style="justify-content: space-between;">
                                             <div class="radio-btn">
                                                 <label class="radio-container">
                                                     <span class="ml-3">Customer</span>
@@ -535,7 +533,14 @@ of a destination.
 <script src="js/fontawesome.js"></script>
 <script src="js/main.js"></script>
 
+
+
+
 <script>
+
+
+
+
     $(function () {
         $(".newsletterForm").submit(function (e) {
             let category = $('#addAddressModal').find("input[name=category]:checked").val();
@@ -816,13 +821,13 @@ of a destination.
         lastScroll = scroll;
     });
 
-    $.fn.isInViewport = function () {
-	var elementTop = $(this).offset().top;
-	var elementBottom = elementTop + $(this).outerHeight();
-	var viewportTop = $(window).scrollTop();
-	var viewportBottom = viewportTop + $(window).height();
-	return elementBottom > viewportTop && elementTop < viewportBottom;
-};
+    // $.fn.isInViewport = function () {
+	// var elementTop = $(this).offset().top;
+	// var elementBottom = elementTop + $(this).outerHeight();
+	// var viewportTop = $(window).scrollTop();
+	// var viewportBottom = viewportTop + $(window).height();
+	// return elementBottom > viewportTop && elementTop < viewportBottom;
+    // };
 
 
 

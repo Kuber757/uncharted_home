@@ -1009,7 +1009,7 @@ h2 {
   margin: 0;
   padding-bottom: 15px;
 }
-.project-section h3 {
+/* .project-section h3 {
   font-weight: 400;
   font-size: 25px;
   line-height: 25px;
@@ -1017,6 +1017,16 @@ h2 {
   text-align: center;
   padding-top: 10px;
   letter-spacing: 2px;
+} */
+.project-section h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 25px;
+  color: #9a765c;
+  text-align: center;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  font-family: 'laren-light';
 }
 .social-icons .fa {
   color: #fff;
@@ -2472,7 +2482,7 @@ p {
 }
 .work-preview button {
   box-sizing: border-box;
-  border-radius: 7px !important;
+  /* border-radius: 7px !important; */
   max-width: fit-content;
   text-align: center;
   font-style: normal !important;

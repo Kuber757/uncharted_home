@@ -220,7 +220,7 @@
                 <img src="images/mat-list/Casted Metal.jpg" loading="lazy">
             </div>
             <div class="hover-materials material1 eggshell-gif d-none">
-                <img src="images/mat-list/Eggshell.jpg" loading="lazy">
+                <img src="images/eggshell.jpg" loading="lazy">
             </div>
             <div class="hover-materials material1 embroidery-gif d-none">
                 <img src="images/mat-list/Embroidery.jpeg" loading="lazy">
@@ -373,7 +373,7 @@
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                             data-parent="#accordionExample">
                             <div class="card-body p-0">
-                                <img loading="lazy" src="images/mat-list/Eggshell.jpg">
+                                <img loading="lazy" src="images/eggshell.jpg">
                                 <a href="wood.html">
                                    
                                 </a>
@@ -1082,7 +1082,28 @@
         // }
     })
 
-
+    $(function () {
+        $(".newsletterForm").submit(function (e) {
+            let category = $('#addAddressModal').find("input[name=category]:checked").val();
+            e.preventDefault();
+            var href = $(this).attr("action");
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: href,
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.status == "success") {
+                        $(".newsletterForm").html(`
+                        <h5 class="text-center font-white">We received your submission,<br> thank you!</h5>
+                      `)
+                    } else {
+                        alert("An error occured: " + response.message);
+                    }
+                }
+            });
+        });
+    });
 
 </script>
 

@@ -384,7 +384,7 @@
 					</div>
 					<div class="col-md-4 text-lg-left text-md-left text-center">
                                 <div>
-                                    <form class="newsletterForm py-md-3" action="https://formcarry.com/s/Pi_qQ5C3BJm" method="POST" accept-charset="UTF-8" >
+                                    <form class="newsletterForm py-md-3" action="https://formcarry.com/s/Pi_qQ5C3BJm" method="POST" accept-charset="UTF-8">
                                     <div class="newsletter-form">
                                         <p class="my-md-2" style="font-family:'laren-light';">Get the latest
                                             updates, discover
@@ -528,6 +528,30 @@
 		}, 700);
 
 	}
+
+
+	$(function () {
+        $(".newsletterForm").submit(function (e) {
+            let category = $('#addAddressModal').find("input[name=category]:checked").val();
+            e.preventDefault();
+            var href = $(this).attr("action");
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: href,
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.status == "success") {
+                        $(".newsletterForm").html(`
+                        <h5 class="text-center font-white">We received your submission,<br> thank you!</h5>
+                      `)
+                    } else {
+                        alert("An error occured: " + response.message);
+                    }
+                }
+            });
+        });
+    });
 </script>
 
 </html>

@@ -81,7 +81,7 @@
                 <div class="row align-items-top align-items-md-center">
                     <div class="col-lg-6 col-md-6 col-12 order-lg-0 order-md-0 order-11 about-us-container mt-lg-0 mt-md-0 mt-5">
                         <div class="fix-height pt-md-5">
-                            <div class="about-brown-bg text-left" data-animation="show"><img src="images/test-img.png"
+                            <div class="about-brown-bg text-left" data-animation="show"><img src="images/test-img.jpg"
                                     alt=""></div>
                         </div>
                     </div>
@@ -553,7 +553,7 @@ of a destination.
                 success: function (response) {
                     if (response.status == "success") {
                         $(".newsletterForm").html(`
-                        <h1>We received your submission, thank you!</h1>
+                        <h5 class="text-center font-white">We received your submission,<br> thank you!</h5>
                       `)
                     } else {
                         alert("An error occured: " + response.message);
@@ -695,14 +695,14 @@ of a destination.
 
 
             if ($('.antique-content').isInViewport()) {
-                // $('.antique-right .antique-cover').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+                $('.antique-right .antique-cover').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
                 $('head').append('<style>.antique-right .antique-cover::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
                 $('head').append('<style>.antique-image-container::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
                 // setTimeout(function () {
                     setTimeout(function () {
                         $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:0%;}</style>');
                         setTimeout(function () {
-                            // $('.antique-image-container img').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
+                            $('.antique-image-container img').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
                             $('head').append('<style>.antique-image-container[data-animation=show]::before{height:0%;}</style>');
                             setTimeout(function () {
                                 $('.antique-left p').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
@@ -720,30 +720,30 @@ of a destination.
                 $('.moving-line-antique').css('transition', 'all 0s linear').css('width', '0px');
                 $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(140%)');
                 $('.antique-line').css('transition', 'all 0s linear').css('width', '0%');
-                // $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:100%;}</style>');
-                // $('head').append('<style>.antique-image-container[data-animation=show]::before{height:100%;}</style>');
+                $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:100%;}</style>');
+                $('head').append('<style>.antique-image-container[data-animation=show]::before{height:100%;}</style>');
                 $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:100%;}</style>');
                 $('head').append('<style>.antique-image-container[data-animation=show]::before{height:100%;}</style>');
                 $('head').append('<style>.antique-right .antique-cover::before{transition:unset;}</style>');
                 $('head').append('<style>.antique-image-container::before{transition:unset;}</style>');
             }
 
-            if ($('.contact-section').isInViewport()) {
-                $('.contact-section h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
-                setTimeout(function () {
-                $('.moving-line-contact').css('transition', 'all 0.7s linear').css('width', '450px');
-                },500)
-            } else {
-                $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
-                $('.moving-line-contact').css('transition', 'all 0s linear').css('width', '0px');
+            // if ($('.contact-section').isInViewport()) {
+            //     $('.contact-section h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+            //     setTimeout(function () {
+            //     $('.moving-line-contact').css('transition', 'all 0.7s linear').css('width', '450px');
+            //     },500)
+            // } else {
+            //     $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
+            //     $('.moving-line-contact').css('transition', 'all 0s linear').css('width', '0px');
 
-            }
+            // }
 
-            if ($('.contact-button').isInViewport()) {
-                $('.contact-button a').css('transition', 'transform 0.4s linear').css('transform', 'translateX(0%)');
-            } else {
-                $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(-100%)');
-            }
+            // if ($('.contact-button').isInViewport()) {
+            //     $('.contact-button a').css('transition', 'transform 0.4s linear').css('transform', 'translateX(0%)');
+            // } else {
+            //     $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(-100%)');
+            // }
 
             $(elementList).each(function (idx, ele) {
                 if ($(ele).isInViewport()) {
@@ -799,7 +799,7 @@ of a destination.
             $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:0%;}</style>');
             $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:0%;}</style>');
             $('.transform-target').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
-            //$('.about-brown-bg').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.about-brown-bg').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
             $('.aboutus-section .about-us-heading h2').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
             $('.aboutus-section .about-us-para p').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
             $('.aboutus-section button').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
@@ -812,7 +812,7 @@ of a destination.
             
             $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
             $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
-            // $('.antique-image-container img').css('transition', 'transform 0.5s linear').css('transform', 'translateY(0%)');
+            $('.antique-image-container img').css('transition', 'transform 0.5s linear').css('transform', 'translateY(0%)');
             $('head').append('<style>.antique-image-container[data-animation=show]::before{height:0%;}</style>');
             $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
             $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
@@ -827,6 +827,8 @@ of a destination.
 	// var viewportBottom = viewportTop + $(window).height();
 	// return elementBottom > viewportTop && elementTop < viewportBottom;
     // };
+
+    
 
 
 

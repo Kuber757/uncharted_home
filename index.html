@@ -83,6 +83,7 @@
                         <div class="fix-height pt-md-5">
                             <div class="about-brown-bg text-left" data-animation="show"><img src="images/test-img.jpg"
                                     alt=""></div>
+                            <!-- <h5 class="about-img-text">Designed by FG stijl by Colin Finnegan</h5> -->
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 pt-5 pt-md-0">
@@ -219,6 +220,11 @@ of a destination.
                             <div class="slider-project py-lg-0 py-md-3">
                                 <div class="slide">
                                     <div class="img-wrapper">
+                                        <img class="transform-target" src="images/kempinski.png">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="img-wrapper">
                                         <img class="transform-target" src="images/dior.png">
                                     </div>
                                 </div>
@@ -232,11 +238,7 @@ of a destination.
                                         <img class="transform-target" src="images/hyatt.png">
                                     </div>
                                 </div>
-                                <div class="slide">
-                                    <div class="img-wrapper">
-                                        <img class="transform-target" src="images/kempinski.png">
-                                    </div>
-                                </div>
+                                
                                 <div class="slide">
                                     <div class="img-wrapper">
                                         <img class="transform-target" src="images/mandarin.png">
@@ -246,7 +248,10 @@ of a destination.
                             <div class="controls">
                                 <div class="project-caption">
                                     <div class="caption">
-                                        <h3>Dior Store Landmark – Peter Marino - Hong Kong</h3>
+                                        <h3>Kempinski Munich – FG Stijl – Munich, Germany</h3>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Dior Store Landmark – Peter Marino - Seoul</h3>
                                     </div>
                                     <div class="caption">
                                         <h3>Fendi Store Madison Avenue – Peter Marino - New York, USA</h3>
@@ -254,9 +259,7 @@ of a destination.
                                     <div class="caption">
                                         <h3>Park Hyatt Vienna – FG Stijl – Vienna, Austria</h3>
                                     </div>
-                                    <div class="caption">
-                                        <h3>Kempinski Munich – FG Stijl – Munich, Germany</h3>
-                                    </div>
+                                    
                                     <div class="caption">
                                         <h3>Mandarin Oriental Munich – FG Stijl – Munich, Germany</h3>
                                     </div>
@@ -553,7 +556,7 @@ of a destination.
                 success: function (response) {
                     if (response.status == "success") {
                         $(".newsletterForm").html(`
-                        <h5 class="text-center font-white">We received your submission,<br> thank you!</h5>
+                        <h5 class="text-center font-white">We have received your subscription,<br> Thank You!</h5>
                       `)
                     } else {
                         alert("An error occured: " + response.message);

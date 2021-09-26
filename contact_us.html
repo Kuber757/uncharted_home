@@ -452,7 +452,7 @@
 				success: function (response) {
 					if (response.status == "success") {
 						$(".ajaxForm").html(`
-                        <h1 class="submission-text">We have received your submission, Thank You!</h1>
+                        <h1 class="submission-text">We have received your subscription,<br> Thank You!</h1>
                       `)
 					} else {
 						alert("An error occured: " + response.message);
@@ -543,7 +543,7 @@
                 success: function (response) {
                     if (response.status == "success") {
                         $(".newsletterForm").html(`
-                        <h5 class="text-center font-white">We received your submission,<br> thank you!</h5>
+                        <h5 class="text-center font-white">We have received your subscription,<br> Thank You!</h5>
                       `)
                     } else {
                         alert("An error occured: " + response.message);

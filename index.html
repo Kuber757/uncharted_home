@@ -61,13 +61,13 @@
         </section>
         <section class="video-section">
             <div class="homewrapper_video">
-                <video controls id="homepage-video-lg" class="d-lg-block d-md-none d-none"  playsinline autoplay muted loop
+                <video id="homepage-video-lg" class="d-lg-block d-md-none d-none"  playsinline autoplay muted loop
                     style="width: 100%; height: 100%;" src="homepage_video.mp4" type="video/mp4">
                 </video>
-                <video controls id="homepage-video-md" class="d-lg-none d-md-block d-none"  playsinline autoplay muted loop
+                <video id="homepage-video-md" class="d-lg-none d-md-block d-none"  playsinline autoplay muted loop
                     style="width: 100%; height: 100%;" src="tab_video.mp4" type="video/mp4">
                 </video>
-                <video controls id="homepage-video" class="d-block d-lg-none d-md-none"  playsinline autoplay muted loop
+                <video id="homepage-video" class="d-block d-lg-none d-md-none"  playsinline autoplay muted loop
                     style="width: 100%; height: 100%;" src="mobile-view.mp4" type="video/mp4">
                 </video>
                 
@@ -589,7 +589,10 @@ of a destination.
         }
     })
 
+    var vid = document.getElementById("homepage-video-lg");
+    var vid = document.getElementById("homepage-video-md");
     var vid = document.getElementById("homepage-video");
+    
     $(document).ready(function () {
         $(".unmute-btn").show();
         $(".mute-btn").hide();
@@ -767,8 +770,8 @@ of a destination.
                     $(ele).find('.transform-target').css('transition', 'all 0s linear').css('transform', 'translateY(100%)');
                 }
             });
-            if (!$('#homepage-video').isInViewport()) {
-                var vid = document.getElementById("homepage-video");
+            if (!$('#homepage-video-lg').isInViewport()) {
+                var vid = document.getElementById("homepage-video-lg");
                 vid.pause()
             }
         }

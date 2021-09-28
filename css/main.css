@@ -1733,7 +1733,7 @@ input {
   background: #f8f5ec;
 }
 .login-bg {
-  background-image: url(../images/login.jpg);
+  background-image: url(../images/login.png);
   height: 100vh;
   background-size: cover;
   background-position: bottom;

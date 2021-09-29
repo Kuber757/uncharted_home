@@ -61,7 +61,7 @@
         </section>
         <section class="video-section">
             <div class="homewrapper_video">
-                <video id="homepage-video-lg" class="d-lg-block d-md-none d-none"  playsinline autoplay muted loop
+                <video id="homepage-video-lg" class="d-lg-block d-md-none d-none"  playsinline autoplay loop
                     style="width: 100%; height: 100%;" src="homepage_video.mp4" type="video/mp4">
                 </video>
                 <video id="homepage-video-md" class="d-lg-none d-md-block d-none"  playsinline autoplay muted loop
@@ -136,27 +136,27 @@ of a destination.
                         <div class="homepage-slides">
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/mat-slider1.png">
+                                    <img class="transform-target" src="images/mat-slider1.jpg">
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/mat-slider2.png">
+                                    <img class="transform-target" src="images/mat-slider2.jpg">
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/mat-slider3.png">
+                                    <img class="transform-target" src="images/mat-slider3.jpg">
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/mat-slider4.png">
+                                    <img class="transform-target" src="images/mat-slider4.jpg">
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="img-wrap">
-                                    <img class="transform-target" src="images/mat-slider5.png">
+                                    <img class="transform-target" src="images/mat-slider5.jpg">
                                 </div>
                             </div>
                         </div>
@@ -589,26 +589,32 @@ of a destination.
         }
     })
 
-    var vid = document.getElementById("homepage-video-lg");
-    var vid = document.getElementById("homepage-video-md");
-    var vid = document.getElementById("homepage-video");
+    var vid_lg = document.getElementById("homepage-video-lg");
+    var vid_md = document.getElementById("homepage-video-md");
+    var vid_mob = document.getElementById("homepage-video");
     
     $(document).ready(function () {
         $(".unmute-btn").show();
         $(".mute-btn").hide();
-        vid.muted = true;
+        vid_lg.muted = true;
+        vid_md.muted = true;
+        vid_mob.muted = true;
     })
 
     function enableMute() {
         console.log('enable');
-        vid.muted = true;
+        vid_lg.muted = true;
+        vid_md.muted = true;
+        vid_mob.muted = true;
         $(".unmute-btn").show();
         $(".mute-btn").hide();
     }
 
     function disableMute() {
         console.log('disable');
-        vid.muted = false;
+        vid_lg.muted = false;
+        vid_md.muted = false;
+        vid_mob.muted = false;
         $(".unmute-btn").hide();
         $(".mute-btn").show();
     }

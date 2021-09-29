@@ -1,3 +1,4 @@
+
 $("#search-icon").click(function () {
 	$(".nav").toggleClass("search");
 	$(".nav").toggleClass("no-search");

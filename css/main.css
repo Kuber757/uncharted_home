@@ -1726,6 +1726,9 @@ input {
   }
 }
 
+a:hover {
+  text-decoration:none;
+}
 .contact-page {
   border-bottom: 3px solid #f9f5ec;
 }

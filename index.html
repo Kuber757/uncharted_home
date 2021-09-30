@@ -580,7 +580,7 @@ of a destination.
         function myFunction() {
             setTimeout(function () {
                 $("#loader").fadeOut('slow');
-            }, 3500);
+            }, 5000);
         }
         myFunction();
 
@@ -780,6 +780,10 @@ of a destination.
                 var vid = document.getElementById("homepage-video-lg");
                 vid.pause()
             }
+            // if ($('#homepage-video-lg').isInViewport()) {
+            //     var vid = document.getElementById("homepage-video-lg");
+            //     vid.play()
+            // }
         }
         else if (scroll == 0) {
             // mob view
@@ -803,6 +807,10 @@ of a destination.
             $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
             $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
             $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
+            if ($('#homepage-video-lg').isInViewport()) {
+                var vid = document.getElementById("homepage-video-lg");
+                vid.play()
+            }
         }
         else {
             $('head').append('<style>.about-brown-bg::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
